@@ -209,7 +209,7 @@ class PlutoGridStyleConfig {
     this.cellColorGroupedRow,
     this.dragTargetColumnColor = const Color(0xFFDCF5FF),
     this.iconColor = Colors.black26,
-    this.menuIconColor = Colors.green,
+    this.paginationIconColor = Colors.green,
     this.disabledIconColor = Colors.black12,
     this.menuBackgroundColor = Colors.white,
     this.gridBorderColor = const Color(0xFFA1A5AE),
@@ -217,6 +217,7 @@ class PlutoGridStyleConfig {
     this.activatedBorderColor = Colors.lightBlue,
     this.inactivatedBorderColor = const Color(0xFFC4C7CC),
     this.iconSize = 18,
+    this.paginationIconSize = 18,
     this.rowHeight = PlutoGridSettings.rowHeight,
     this.columnHeight = PlutoGridSettings.rowHeight,
     this.columnFilterHeight = PlutoGridSettings.rowHeight,
@@ -266,7 +267,7 @@ class PlutoGridStyleConfig {
     this.cellColorGroupedRow,
     this.dragTargetColumnColor = const Color(0xFF313131),
     this.iconColor = Colors.white38,
-    this.menuIconColor = Colors.white38,
+    this.paginationIconColor = Colors.white38,
     this.disabledIconColor = Colors.white12,
     this.menuBackgroundColor = const Color(0xFF414141),
     this.gridBorderColor = const Color(0xFF666666),
@@ -274,6 +275,7 @@ class PlutoGridStyleConfig {
     this.activatedBorderColor = const Color(0xFFFFFFFF),
     this.inactivatedBorderColor = const Color(0xFF666666),
     this.iconSize = 18,
+    this.paginationIconSize = 18,
     this.rowHeight = PlutoGridSettings.rowHeight,
     this.columnHeight = PlutoGridSettings.rowHeight,
     this.columnFilterHeight = PlutoGridSettings.rowHeight,
@@ -364,7 +366,7 @@ class PlutoGridStyleConfig {
 
   /// Icon color. (column menu, cell of popup type, pagination plugin)
   final Color iconColor;
-  final Color menuIconColor;
+  final Color paginationIconColor;
 
   /// Disabled icon color. (pagination plugin)
   final Color disabledIconColor;
@@ -390,6 +392,7 @@ class PlutoGridStyleConfig {
 
   /// Icon size. (column menu, cell of popup type)
   final double iconSize;
+  final double paginationIconSize;
 
   /// Height of a row.
   final double rowHeight;
@@ -469,7 +472,7 @@ class PlutoGridStyleConfig {
     PlutoOptional<Color?>? cellColorGroupedRow,
     Color? dragTargetColumnColor,
     Color? iconColor,
-    Color? menuIconColor,
+    Color? paginationIconColor,
     Color? disabledIconColor,
     Color? menuBackgroundColor,
     Color? gridBorderColor,
@@ -477,6 +480,7 @@ class PlutoGridStyleConfig {
     Color? activatedBorderColor,
     Color? inactivatedBorderColor,
     double? iconSize,
+    double? paginationIconSize,
     double? rowHeight,
     double? columnHeight,
     double? columnFilterHeight,
@@ -524,7 +528,7 @@ class PlutoGridStyleConfig {
       dragTargetColumnColor:
           dragTargetColumnColor ?? this.dragTargetColumnColor,
       iconColor: iconColor ?? this.iconColor,
-      menuIconColor: menuIconColor ?? this.menuIconColor,
+      paginationIconColor: paginationIconColor ?? this.paginationIconColor,
       disabledIconColor: disabledIconColor ?? this.disabledIconColor,
       menuBackgroundColor: menuBackgroundColor ?? this.menuBackgroundColor,
       gridBorderColor: gridBorderColor ?? this.gridBorderColor,
@@ -533,6 +537,7 @@ class PlutoGridStyleConfig {
       inactivatedBorderColor:
           inactivatedBorderColor ?? this.inactivatedBorderColor,
       iconSize: iconSize ?? this.iconSize,
+      paginationIconSize: paginationIconSize ?? this.paginationIconSize,
       rowHeight: rowHeight ?? this.rowHeight,
       columnHeight: columnHeight ?? this.columnHeight,
       columnFilterHeight: columnFilterHeight ?? this.columnFilterHeight,
@@ -584,7 +589,7 @@ class PlutoGridStyleConfig {
             cellColorGroupedRow == other.cellColorGroupedRow &&
             dragTargetColumnColor == other.dragTargetColumnColor &&
             iconColor == other.iconColor &&
-            menuIconColor == other.menuIconColor &&
+            paginationIconColor == other.paginationIconColor &&
             disabledIconColor == other.disabledIconColor &&
             menuBackgroundColor == other.menuBackgroundColor &&
             gridBorderColor == other.gridBorderColor &&
@@ -592,6 +597,7 @@ class PlutoGridStyleConfig {
             activatedBorderColor == other.activatedBorderColor &&
             inactivatedBorderColor == other.inactivatedBorderColor &&
             iconSize == other.iconSize &&
+            paginationIconSize == other.paginationIconSize &&
             rowHeight == other.rowHeight &&
             columnHeight == other.columnHeight &&
             columnFilterHeight == other.columnFilterHeight &&
@@ -630,7 +636,7 @@ class PlutoGridStyleConfig {
         cellColorGroupedRow,
         dragTargetColumnColor,
         iconColor,
-        menuIconColor,
+        paginationIconColor,
         disabledIconColor,
         menuBackgroundColor,
         gridBorderColor,
@@ -638,6 +644,7 @@ class PlutoGridStyleConfig {
         activatedBorderColor,
         inactivatedBorderColor,
         iconSize,
+        paginationIconSize,
         rowHeight,
         columnHeight,
         columnFilterHeight,

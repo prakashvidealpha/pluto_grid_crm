@@ -177,7 +177,7 @@ class PlutoColumnTitleState extends PlutoStateWithChange<PlutoColumnTitle> {
                     onPointerDown: _handleOnPointDown,
                     onPointerMove: _handleOnPointMove,
                     onPointerUp: _handleOnPointUp,
-                    child: contextMenuIcon,
+                    child: const SizedBox(),
                   )
                 : contextMenuIcon,
           ),
@@ -309,7 +309,7 @@ class _SortableWidget extends StatelessWidget {
     required this.child,
   });
 
-  void _onTap() {
+  void onTap() {
     stateManager.toggleSortColumn(column);
   }
 
@@ -320,7 +320,7 @@ class _SortableWidget extends StatelessWidget {
             cursor: SystemMouseCursors.click,
             child: GestureDetector(
               key: const ValueKey('ColumnTitleSortableGesture'),
-              onTap: _onTap,
+              onTap: null,
               child: child,
             ),
           )
@@ -534,10 +534,10 @@ class _ColumnTextWidgetState extends PlutoStateWithChange<_ColumnTextWidget> {
             child: IconButton(
               icon: Icon(
                 Icons.filter_alt_outlined,
-                color: stateManager.configuration.style.iconColor,
-                size: stateManager.configuration.style.iconSize,
+                color: stateManager.configuration.style.paginationIconColor,
+                size: stateManager.configuration.style.paginationIconSize,
               ),
-              onPressed: _handleOnPressedFilter,
+              onPressed: null,
               constraints: BoxConstraints(
                 maxHeight:
                     widget.height + (PlutoGridSettings.rowBorderWidth * 2),
