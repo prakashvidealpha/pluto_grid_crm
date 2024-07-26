@@ -232,8 +232,6 @@ class PlutoGridStyleConfig {
       color: Colors.black,
       fontSize: 14,
     ),
-    this.columnContextIcon = Icons.dehaze,
-    this.columnResizeIcon = Icons.code_sharp,
     this.columnAscendingIcon,
     this.columnDescendingIcon,
     this.rowGroupExpandedIcon = Icons.keyboard_arrow_down,
@@ -288,8 +286,6 @@ class PlutoGridStyleConfig {
       color: Colors.white,
       fontSize: 14,
     ),
-    this.columnContextIcon = Icons.dehaze,
-    this.columnResizeIcon = Icons.code_sharp,
     this.columnAscendingIcon,
     this.columnDescendingIcon,
     this.rowGroupExpandedIcon = Icons.keyboard_arrow_down,
@@ -417,11 +413,9 @@ class PlutoGridStyleConfig {
 
   /// Icon that can open a pop-up menu next to the column title
   /// when [enableContextMenu] of [PlutoColumn] is true.
-  final IconData columnContextIcon;
 
   /// If enableContextMenu of PlutoColumn is false and enableDropToResize is true,
   /// only the width of the column can be adjusted.
-  final IconData columnResizeIcon;
 
   /// Ascending icon when sorting a column.
   ///
@@ -481,8 +475,6 @@ class PlutoGridStyleConfig {
     EdgeInsets? defaultCellPadding,
     TextStyle? columnTextStyle,
     TextStyle? cellTextStyle,
-    IconData? columnContextIcon,
-    IconData? columnResizeIcon,
     PlutoOptional<Icon?>? columnAscendingIcon,
     PlutoOptional<Icon?>? columnDescendingIcon,
     IconData? rowGroupExpandedIcon,
@@ -538,8 +530,6 @@ class PlutoGridStyleConfig {
       defaultCellPadding: defaultCellPadding ?? this.defaultCellPadding,
       columnTextStyle: columnTextStyle ?? this.columnTextStyle,
       cellTextStyle: cellTextStyle ?? this.cellTextStyle,
-      columnContextIcon: columnContextIcon ?? this.columnContextIcon,
-      columnResizeIcon: columnResizeIcon ?? this.columnResizeIcon,
       columnAscendingIcon: columnAscendingIcon == null
           ? this.columnAscendingIcon
           : columnAscendingIcon.value,
@@ -594,8 +584,6 @@ class PlutoGridStyleConfig {
             defaultCellPadding == other.defaultCellPadding &&
             columnTextStyle == other.columnTextStyle &&
             cellTextStyle == other.cellTextStyle &&
-            columnContextIcon == other.columnContextIcon &&
-            columnResizeIcon == other.columnResizeIcon &&
             columnAscendingIcon == other.columnAscendingIcon &&
             columnDescendingIcon == other.columnDescendingIcon &&
             rowGroupExpandedIcon == other.rowGroupExpandedIcon &&
@@ -639,8 +627,6 @@ class PlutoGridStyleConfig {
         defaultCellPadding,
         columnTextStyle,
         cellTextStyle,
-        columnContextIcon,
-        columnResizeIcon,
         columnAscendingIcon,
         columnDescendingIcon,
         rowGroupExpandedIcon,

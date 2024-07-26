@@ -144,9 +144,7 @@ class PlutoColumnTitleState extends PlutoStateWithChange<PlutoColumnTitle> {
           icon: PlutoGridColumnIcon(
             sort: _sort,
             color: style.iconColor,
-            icon: widget.column.enableContextMenu
-                ? style.columnContextIcon
-                : style.columnResizeIcon,
+         
             ascendingIcon: style.columnAscendingIcon,
             descendingIcon: style.columnDescendingIcon,
           ),

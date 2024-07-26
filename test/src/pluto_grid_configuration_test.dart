@@ -70,7 +70,7 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
+        
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -84,7 +84,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -102,7 +101,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -116,7 +114,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -134,7 +131,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -148,7 +144,6 @@ void main() {
         enableMoveDownAfterSelecting: false,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -166,7 +161,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -180,7 +174,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: false,
@@ -198,7 +191,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
@@ -212,7 +204,6 @@ void main() {
         enableMoveDownAfterSelecting: true,
         enterKeyAction: PlutoGridEnterKeyAction.editingAndMoveRight,
         style: PlutoGridStyleConfig(
-          columnResizeIcon: IconData(0),
         ),
         scrollbar: PlutoGridScrollbarConfig(
           isAlwaysShown: true,
