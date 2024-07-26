@@ -116,7 +116,7 @@ class PlutoColumnTitleState extends PlutoStateWithChange<PlutoColumnTitle> {
     if (_isPointMoving) {
       stateManager.updateCorrectScrollOffset();
     } else if (mounted && widget.column.enableContextMenu) {
-      _showContextMenu(context, event.position);
+      // _showContextMenu(context, event.position);
     }
 
     _isPointMoving = false;
@@ -141,13 +141,7 @@ class PlutoColumnTitleState extends PlutoStateWithChange<PlutoColumnTitle> {
       child: Align(
         alignment: Alignment.center,
         child: IconButton(
-          icon: PlutoGridColumnIcon(
-            sort: _sort,
-            color: style.iconColor,
-         
-            ascendingIcon: style.columnAscendingIcon,
-            descendingIcon: style.columnDescendingIcon,
-          ),
+          icon: const SizedBox(),
           iconSize: style.iconSize,
           mouseCursor: contextMenuCursor,
           onPressed: null,
@@ -177,9 +171,9 @@ class PlutoColumnTitleState extends PlutoStateWithChange<PlutoColumnTitle> {
                     onPointerDown: _handleOnPointDown,
                     onPointerMove: _handleOnPointMove,
                     onPointerUp: _handleOnPointUp,
-                    child: const SizedBox(),
+                    child: contextMenuIcon,
                   )
-                : contextMenuIcon,
+                : const SizedBox(),
           ),
       ],
     );
