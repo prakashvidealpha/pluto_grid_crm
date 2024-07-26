@@ -176,7 +176,7 @@ class PlutoPaginationState extends _PlutoPaginationStateWithChange {
           isCurrentIndex ? stateManager.configuration.style.iconSize : null,
       color: isCurrentIndex
           ? stateManager.configuration.style.activatedBorderColor
-          : stateManager.configuration.style.iconColor,
+          : stateManager.configuration.style.menuIconColor,
     );
   }
 
@@ -203,7 +203,7 @@ class PlutoPaginationState extends _PlutoPaginationStateWithChange {
       builder: (_, size) {
         _maxWidth = size.maxWidth;
 
-        final Color iconColor = stateManager.configuration.style.iconColor;
+        final Color iconColor = stateManager.configuration.style.menuIconColor;
 
         final Color disabledIconColor =
             stateManager.configuration.style.disabledIconColor;

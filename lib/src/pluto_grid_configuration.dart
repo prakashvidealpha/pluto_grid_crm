@@ -209,6 +209,7 @@ class PlutoGridStyleConfig {
     this.cellColorGroupedRow,
     this.dragTargetColumnColor = const Color(0xFFDCF5FF),
     this.iconColor = Colors.black26,
+    this.menuIconColor = Colors.green,
     this.disabledIconColor = Colors.black12,
     this.menuBackgroundColor = Colors.white,
     this.gridBorderColor = const Color(0xFFA1A5AE),
@@ -232,6 +233,8 @@ class PlutoGridStyleConfig {
       color: Colors.black,
       fontSize: 14,
     ),
+    this.columnContextIcon = Icons.dehaze,
+    this.columnResizeIcon = Icons.chevron_right,
     this.columnAscendingIcon,
     this.columnDescendingIcon,
     this.rowGroupExpandedIcon = Icons.keyboard_arrow_down,
@@ -263,6 +266,7 @@ class PlutoGridStyleConfig {
     this.cellColorGroupedRow,
     this.dragTargetColumnColor = const Color(0xFF313131),
     this.iconColor = Colors.white38,
+    this.menuIconColor = Colors.white38,
     this.disabledIconColor = Colors.white12,
     this.menuBackgroundColor = const Color(0xFF414141),
     this.gridBorderColor = const Color(0xFF666666),
@@ -286,6 +290,8 @@ class PlutoGridStyleConfig {
       color: Colors.white,
       fontSize: 14,
     ),
+    this.columnContextIcon = Icons.dehaze,
+    this.columnResizeIcon = Icons.chevron_right,
     this.columnAscendingIcon,
     this.columnDescendingIcon,
     this.rowGroupExpandedIcon = Icons.keyboard_arrow_down,
@@ -358,6 +364,7 @@ class PlutoGridStyleConfig {
 
   /// Icon color. (column menu, cell of popup type, pagination plugin)
   final Color iconColor;
+  final Color menuIconColor;
 
   /// Disabled icon color. (pagination plugin)
   final Color disabledIconColor;
@@ -413,9 +420,11 @@ class PlutoGridStyleConfig {
 
   /// Icon that can open a pop-up menu next to the column title
   /// when [enableContextMenu] of [PlutoColumn] is true.
+  final IconData columnContextIcon;
 
   /// If enableContextMenu of PlutoColumn is false and enableDropToResize is true,
   /// only the width of the column can be adjusted.
+  final IconData columnResizeIcon;
 
   /// Ascending icon when sorting a column.
   ///
@@ -460,6 +469,7 @@ class PlutoGridStyleConfig {
     PlutoOptional<Color?>? cellColorGroupedRow,
     Color? dragTargetColumnColor,
     Color? iconColor,
+    Color? menuIconColor,
     Color? disabledIconColor,
     Color? menuBackgroundColor,
     Color? gridBorderColor,
@@ -475,6 +485,8 @@ class PlutoGridStyleConfig {
     EdgeInsets? defaultCellPadding,
     TextStyle? columnTextStyle,
     TextStyle? cellTextStyle,
+    IconData? columnContextIcon,
+    IconData? columnResizeIcon,
     PlutoOptional<Icon?>? columnAscendingIcon,
     PlutoOptional<Icon?>? columnDescendingIcon,
     IconData? rowGroupExpandedIcon,
@@ -512,6 +524,7 @@ class PlutoGridStyleConfig {
       dragTargetColumnColor:
           dragTargetColumnColor ?? this.dragTargetColumnColor,
       iconColor: iconColor ?? this.iconColor,
+      menuIconColor: menuIconColor ?? this.menuIconColor,
       disabledIconColor: disabledIconColor ?? this.disabledIconColor,
       menuBackgroundColor: menuBackgroundColor ?? this.menuBackgroundColor,
       gridBorderColor: gridBorderColor ?? this.gridBorderColor,
@@ -530,6 +543,8 @@ class PlutoGridStyleConfig {
       defaultCellPadding: defaultCellPadding ?? this.defaultCellPadding,
       columnTextStyle: columnTextStyle ?? this.columnTextStyle,
       cellTextStyle: cellTextStyle ?? this.cellTextStyle,
+      columnContextIcon: columnContextIcon ?? this.columnContextIcon,
+      columnResizeIcon: columnResizeIcon ?? this.columnResizeIcon,
       columnAscendingIcon: columnAscendingIcon == null
           ? this.columnAscendingIcon
           : columnAscendingIcon.value,
@@ -569,6 +584,7 @@ class PlutoGridStyleConfig {
             cellColorGroupedRow == other.cellColorGroupedRow &&
             dragTargetColumnColor == other.dragTargetColumnColor &&
             iconColor == other.iconColor &&
+            menuIconColor == other.menuIconColor &&
             disabledIconColor == other.disabledIconColor &&
             menuBackgroundColor == other.menuBackgroundColor &&
             gridBorderColor == other.gridBorderColor &&
@@ -584,6 +600,8 @@ class PlutoGridStyleConfig {
             defaultCellPadding == other.defaultCellPadding &&
             columnTextStyle == other.columnTextStyle &&
             cellTextStyle == other.cellTextStyle &&
+            columnContextIcon == other.columnContextIcon &&
+            columnResizeIcon == other.columnResizeIcon &&
             columnAscendingIcon == other.columnAscendingIcon &&
             columnDescendingIcon == other.columnDescendingIcon &&
             rowGroupExpandedIcon == other.rowGroupExpandedIcon &&
@@ -612,6 +630,7 @@ class PlutoGridStyleConfig {
         cellColorGroupedRow,
         dragTargetColumnColor,
         iconColor,
+        menuIconColor,
         disabledIconColor,
         menuBackgroundColor,
         gridBorderColor,
@@ -627,6 +646,8 @@ class PlutoGridStyleConfig {
         defaultCellPadding,
         columnTextStyle,
         cellTextStyle,
+        columnContextIcon,
+        columnResizeIcon,
         columnAscendingIcon,
         columnDescendingIcon,
         rowGroupExpandedIcon,
